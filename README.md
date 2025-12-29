@@ -119,9 +119,9 @@ https://payhip.com/b/gTHjP
 
 > Example dashboards and views included in the full implementation.
 
-![Linux Servers Dashboard](screenshots/linux.png)
-![Windows Servers Dashboard](screenshots/windows.png)
-![Web & API Monitoring](screenshots/web.png)
+![Linux Servers Dashboard](linux.png)
+![Windows Servers Dashboard](windows.png)
+![Web & API Monitoring](web.png)
 
 ---
 
