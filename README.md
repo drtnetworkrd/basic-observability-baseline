@@ -1,5 +1,5 @@
 # Basic Observability Baseline
-### A practical self-hosted observability starting point for small infra teams
+### A practical conceptual self-hosted observability starting point for small infra teams
 ---
 
 ## Baseline Architecture
@@ -63,6 +63,22 @@ At a high level, the baseline combines:
 The focus is on **how these tools work together**, not on showcasing every feature they have.
 
 ---
+## What this baseline intentionally does NOT include
+
+To keep this repository focused and easy to reason about, it intentionally does not include:
+
+- production-ready Docker Compose files
+- pre-wired networking or reverse proxy configuration
+- dashboards or opinionated visualizations
+- authentication or access hardening
+- ready-made Prometheus jobs or exporters
+- Zabbix templates or host definitions
+
+Those pieces are where most of the setup time and friction usually live.
+
+This repository focuses on **architecture and integration boundaries**, not on operational convenience.
+
+---
 
 ## Why combine Prometheus and Zabbix?
 
@@ -118,7 +134,8 @@ This is probably **not** for you if:
 
 This repository describes the **architecture and intent** of the baseline.
 
-A **complete, ready-to-run implementation** is available separately and includes:
+For those who want to skip the integration work and start with a working reference implementation, 
+a complete, ready-to-run version is available separately. It includes:
 
 - a production-ready Docker Compose stack
 - pre-integrated services and networking
@@ -133,6 +150,8 @@ https://payhip.com/b/gTHjP
 
 
 ---
+Note: Screenshots below are taken from the full implementation.  
+This baseline repository does not include dashboards or visual assets by design.
 
 ## Screenshots
 
