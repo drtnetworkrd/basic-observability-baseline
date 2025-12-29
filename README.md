@@ -1,5 +1,22 @@
 # Basic Observability Baseline
 ### A practical self-hosted observability starting point for small infra teams
+---
+
+## Baseline Architecture
+
+This repository represents a **conceptual baseline** for a self-hosted observability stack.
+
+It shows how commonly used open-source tools fit together to provide visibility across
+infrastructure, services, and uptime checks — without committing to a full production implementation.
+
+Grafana
+├─ Prometheus (metrics)
+│ └─ Blackbox Exporter (uptime / API / TCP checks)
+├─ Zabbix (infrastructure & OS-level monitoring)
+└─ Nginx (secure access via reverse proxy)
+
+This baseline is meant to help you **understand the integration boundaries** between tools,
+not to replace a fully configured monitoring environment.
 
 ---
 
@@ -110,8 +127,10 @@ A **complete, ready-to-run implementation** is available separately and includes
 - step-by-step documentation
 - example Prometheus and Blackbox checks
 
-👉 **Full package available here:**  
+📦 **Want a ready-to-run observability stack?**  
+Get the full implementation (Docker Compose + dashboards + docs) here:  
 https://payhip.com/b/gTHjP
+
 
 ---
 
